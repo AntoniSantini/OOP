@@ -1,0 +1,8 @@
+#include "enemy.h"
+
+Enemy::Enemy(const std::string& name, int health, int difficulty)
+	: GameCharacter(name, health), difficulty(difficulty) {}
+
+Enemy::~Enemy() {}
+
+int Enemy::getDifficulty() const { return difficulty; }
